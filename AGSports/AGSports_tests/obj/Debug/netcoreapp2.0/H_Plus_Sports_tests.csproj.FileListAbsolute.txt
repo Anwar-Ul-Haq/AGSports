@@ -1,0 +1,17 @@
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\H_Plus_Sports_tests.deps.json
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\H_Plus_Sports_tests.runtimeconfig.json
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\H_Plus_Sports_tests.runtimeconfig.dev.json
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\H_Plus_Sports_tests.dll
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\obj\Debug\netcoreapp2.0\H_Plus_Sports_tests.csprojResolveAssemblyReference.cache
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\obj\Debug\netcoreapp2.0\H_Plus_Sports_tests.csproj.CoreCompileInputs.cache
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\obj\Debug\netcoreapp2.0\H_Plus_Sports_tests.AssemblyInfoInputs.cache
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\obj\Debug\netcoreapp2.0\H_Plus_Sports_tests.AssemblyInfo.cs
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\H_Plus_Sports_tests.pdb
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\H_Plus_Sports.dll
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\bin\Debug\netcoreapp2.0\H_Plus_Sports.pdb
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\obj\Debug\netcoreapp2.0\H_Plus_Sports_tests.csproj.CopyComplete
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\obj\Debug\netcoreapp2.0\H_Plus_Sports_tests.dll
+C:\1\Practice\H_Plus_Sports\H_Plus_Sports_tests\obj\Debug\netcoreapp2.0\H_Plus_Sports_tests.pdb
