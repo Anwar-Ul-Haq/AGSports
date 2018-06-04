@@ -1,19 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AGSports.Contracts;
 using AGSports.Models;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace AGSports.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {
         private readonly AGSportsContext _context;
-        public CustomerRepository(AGSportsContext context)
+
+        private readonly IMemoryCache _cache;
+        public CustomerRepository(AGSportsContext context , IMemoryCache cache)
         {
             _context =context;
+            _cache = cache;
         }
         public async Task<Customer> Add(Customer customer)
         {
@@ -29,7 +33,23 @@ namespace AGSports.Repositories
 
         public  async Task<Customer> Find(int id)
         {
-            return await _context.Customer.Include(customer => customer.Order).SingleOrDefaultAsync(a => a.CustomerId == id);
+
+            var cachedCustomer = _cache.Get<Customer>(id);
+
+            if(cachedCustomer != null)
+            {
+                return cachedCustomer;
+            }
+
+            else
+            {
+              var persistedCustomer =  await _context.Customer.Include(customer => customer.Order).SingleOrDefaultAsync(a => a.CustomerId == id);
+              var cacheEntryOption = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromSeconds(60));
+                _cache.Set(persistedCustomer.CustomerId, persistedCustomer, cacheEntryOption);
+
+                return persistedCustomer;
+            }
+          
         }
 
         public IEnumerable<Customer> GetAll()
