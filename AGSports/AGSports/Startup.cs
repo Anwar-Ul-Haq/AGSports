@@ -26,6 +26,9 @@ namespace AGSports
         {
 
             services.AddScoped<ICustomerRepository, CustomerRepository>();
+            
+             //services.AddResponseCaching();
+            services.AddMemoryCache();
             services.AddMvc();
             //azure database first 
             var connection = "";
@@ -40,6 +43,7 @@ namespace AGSports
             {
                 app.UseDeveloperExceptionPage();
             }
+             //app.UseResponseCaching();
             app.UseMiddleware<StackifyMiddleware.RequestTracerMiddleware>(); // install nuget pacakge for stackifymiddleware ..https://stackify.com/
             app.UseMvc();
         }
