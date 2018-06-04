@@ -26,6 +26,7 @@ namespace AGSports.Controllers
         }
 
         [HttpGet]
+        [ResponseCache(Duration =60)]
         public IActionResult GetCustomer()
         {
             var result = new ObjectResult(_customerRepository.GetAll())
@@ -39,6 +40,7 @@ namespace AGSports.Controllers
 
 
         [HttpGet("{id}",Name ="GetCustomer")]
+        [ResponseCache(Duration = 60)]
         public async Task<IActionResult> GetCustomer([FromRoute] int id)
         {
             var customer = await _customerRepository.Find(id);
